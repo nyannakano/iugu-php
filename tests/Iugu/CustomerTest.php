@@ -8,21 +8,6 @@ final class Iugu_CustomerTest extends TestCase
 {
   protected function setUp(): void
   {
-    if (PHP_VERSION_ID >= 70100) {
-      $this->setUpForNewerPHP();
-    } else {
-      $this->setUpForOlderPHP();
-    }
-  }
-
-  protected function setUpForNewerPHP(): void
-  {
-    Iugu::$endpoint = "http://api.desenvolvimento";
-    Iugu::setApiKey("development_api_token");
-  }
-
-  protected function setUpForOlderPHP()
-  {
     Iugu::$endpoint = "http://api.desenvolvimento";
     Iugu::setApiKey("development_api_token");
   }
