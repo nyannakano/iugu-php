@@ -1,6 +1,6 @@
 <?php
     // exemplo de uso da classe BankVerification
-    Iugu::setApiKey('chave-api-key');   // Chave do user
+    Iugu::setApiKey('api-key');   // Chave do user
     $updateBank = Iugu_BankVerification::create(Array(
             "agency"                    => '9999-9',
             "account"                   => '999999-9',
